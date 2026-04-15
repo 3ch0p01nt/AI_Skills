@@ -3,6 +3,10 @@
     {
       "name": "perspectives",
       "description": "Draft Microsoft Perspectives feedback through guided conversation. Produces polished, positive, impact-focused feedback in the official Keep doing / Re-think / Additional thoughts format."
+    },
+    {
+      "name": "connect",
+      "description": "Draft a complete Microsoft Connect self-reflection and companion Impact Card through guided conversation. Covers all 5 Connect form sections with evidence-based, calibration-optimized output."
     }
   ]
 }
