@@ -54,7 +54,52 @@ The actual Microsoft Connect form has these sections:
 4. **Review Your Goals** — Status table showing progress against each goal
 5. **How Will You Reach Your Goals?** — Forward-looking plan for remainder of period
 
+## Relationship to Connects-Intake Skill
+
+This skill and the `connects-intake` skill are complementary:
+- **connects-intake** = capture individual wins as they happen throughout the year → stored as `Win - *.md` notes in Obsidian with structured frontmatter
+- **connect** (this skill) = assemble accumulated wins into the complete Connect self-reflection + Impact Card at review time
+
+**Workflow**: Use `connects-intake` throughout the year to log wins → Use this `connect` skill at mid-year and end-of-year to synthesize everything into your Connect submission.
+
+When this skill activates, check `04 - Wins/` in the Obsidian vault for existing Win notes. Also check these vault files for framework context:
+- `07 - Professional Development/Performance Reviews/Connects Framework.md` — WHAT/HOW structure
+- `07 - Professional Development/Performance Reviews/Connects Goals.md` — the 4 organizational goals
+- `07 - Professional Development/Performance Reviews/FY26 H1 Connect.md` — mid-year submission examples
+- `07 - Professional Development/Performance Reviews/FY26 Manager Feedback.md` — manager coaching themes
+
 ## Intake Workflow
+
+### Step 0: Parse What's Already Available
+
+Before asking questions, silently inventory what's already present:
+
+| Source | What to Look For |
+|--------|-----------------|
+| **Obsidian Win notes** (`04 - Wins/`) | Structured accomplishments with frontmatter (client, project, category, goals, behaviors, impact) |
+| **Prior Connect submissions** | Mid-year draft, previous year's Connect for style/tone reference |
+| **Impact Card / Talent Card** | Existing metrics, goal framing, manager-approved language |
+| **Manager 1:1 notes** | Coaching themes, specific guidance on framing |
+| **Perspectives received** | Peer feedback that validates claims |
+
+Identify which of these fields are already covered across available sources:
+
+| Field | Description | Example Signal |
+|-------|-------------|----------------|
+| **Action** | What specifically they did (verb + object) | "built", "deployed", "resolved", "led" |
+| **Client** | Which customer | Customer name or project context |
+| **Project** | Named initiative | Project name reference |
+| **Category** | Win type: delivery, technical, leadership, relationship, efficiency, recognition | Nature of the accomplishment |
+| **Quantified Impact** | Numbers: dollars, percentages, time saved, TB, hours, people impacted | Any numeric value |
+| **Business Outcome** | What it enabled: ACR, adoption, risk reduction, time-to-value, compliance | Business language |
+| **Goal Alignment** | Which of the 4 Connects goals this maps to | Goal keywords (see below) |
+| **Behaviors** | Microsoft behaviors demonstrated | Collaboration, learning, mentoring signals |
+| **AI Lens** | Whether AI/Copilot was involved or enabled | AI, Copilot, AOAI, automation |
+| **Security Lens** | Security implications or improvements | Threat, detection, compliance, posture |
+| **Timeline** | When this happened | Date references |
+| **Evidence** | Artifacts, feedback, metrics, deliverables | Tangible outputs |
+
+Only ask about fields that are NOT already covered by existing data.
 
 ### Step 1: Understand Context
 
@@ -78,20 +123,32 @@ Ask the user:
 
 **If data tools are not available**, ask the user in priority order:
 
-#### Priority 1 — Required
+#### Priority 1 — Required (always ask if missing)
 1. "What are your top 3 accomplishments this period? For each: what did you do, what was the measurable result?"
 2. "What are your organizational goals, and how did you perform against each?"
 3. "What revenue/business metrics can you claim? (ACR, NNR, pipeline, utilization, hours billed)"
 
-#### Priority 2 — High Value
+#### Priority 2 — High Value (ask if not inferrable)
 4. "Did you receive any formal recognition, customer praise, or leadership call-outs?"
 5. "Who did you mentor, enable, or help grow? What was the measurable outcome?"
 6. "What reusable IP, tools, or assets did you create that others use?"
+7. "Was AI/Copilot involved in how you did this or what you delivered?" *(AI Lens)*
+8. "Were there security implications or improvements?" *(Security Lens)*
 
-#### Priority 3 — Critical for Completeness
-7. "What was your biggest challenge or setback? What did you learn?"
-8. "What's your plan for the remainder of the review period?"
-9. "Has your manager given you any specific feedback or guidance on how to frame things?"
+#### Priority 3 — Critical for Completeness (ask if conversation is flowing)
+9. "What was your biggest challenge or setback? What did you learn?"
+10. "What's your plan for the remainder of the review period?"
+11. "Has your manager given you any specific feedback or guidance on how to frame things?"
+12. "Any artifacts — deliverables, dashboards, feedback, emails, metrics you can point to?" *(Evidence)*
+
+#### When to Stop Asking
+
+Stop gathering and start drafting when you have:
+- At least 3 specific accomplishments with quantified impact or clear business outcomes
+- Goal status for all organizational goals
+- At least one revenue/business metric
+- A challenge/setback identified
+- Enough context to write the Challenge → Solution → Impact pattern for each impact area
 
 ### Step 3: Verify and Source
 
@@ -292,6 +349,19 @@ Include direct stakeholder quotes with attribution:
 
 ## Quality Checklist
 
+### Calibration Lenses
+
+> [!important] Year-End Differentiators
+> Apply these calibration lenses when writing (from common manager feedback patterns):
+> - **Quantify everything** — dollars, percentages, time saved, people impacted
+> - **Show AI impact, not just readiness** — adoption metrics, overhead reduction, not just "I built it"
+> - **Mentorship needs measurable outcomes** — someone got promoted, recognized, or unblocked
+> - **Connect learning to business metrics** — translate skill growth into delivery speed, risk reduction, CSAT
+> - **Show influence scaling** — not just doing, but enabling others to do
+> - **Internal + external values** — don't only show customer-facing behaviors
+
+### Final Verification
+
 Before finalizing, verify:
 
 - [ ] Every revenue/metric claim has a named source with date
@@ -337,11 +407,10 @@ Connect feedback evaluates WHAT (impact/results) and HOW (behaviors). Map accomp
 ### Goal Mapping (ISD Federal Consulting)
 | Goal | Keywords/Signals |
 |------|-----------------|
-| **Compliance** | Timecards, training, Trust Code — always one line |
-| **ACR / Revenue** | ACR protected, ACR generated, NNR, pipeline, ECIF, partner orchestration, consumption |
-| **AI Adoption** | AI integration, Copilot, AOAI, operational AI value (not just readiness) |
-| **Service Delivery** | Utilization, delivery quality, trusted advisor, IP creation, reusable assets, cross-practice improvement |
-| **Career Growth** | Certifications, mentorship with outcomes, technical depth expansion |
+| **Goal 1 — Transformational Deals & Consumption** | ACR, NNR, ECIF, partner orchestration, multi-solution-area, consumption, adoption, time-to-value, customer transformation |
+| **Goal 2 — AI, Cloud & Security Solutions Depth** | AI integration, Copilot, Sentinel, Defender, XDR, identity, Zero Trust, certifications, solution area expertise, thought leadership |
+| **Goal 3 — AI-First Delivery & Operational Excellence** | Utilization, delivery quality, trusted advisor, IP creation, AI-first methods, cost efficiency, customer strategy, operational hygiene |
+| **Goal 4 — Trust, Culture & Compliance** | Compliance, training, values, ethics, culture, diversity, inclusion, mentorship culture |
 
 ## Level-Appropriate Framing
 
