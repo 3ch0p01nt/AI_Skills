@@ -175,6 +175,10 @@ If the user has received manager coaching, integrate it as calibration lens. Com
 - **"Numbers tell the story"** — Quantify everything; revenue, time saved, scope, scale
 - **"Level-appropriate framing"** — L63: depth of execution. L65: cross-practice improvement. L67: org-level strategy
 - **"Top 3 + there's more"** — Lead with biggest hits, signal breadth without overwhelming
+- **"Quality over quantity"** — 2-4 key impacts, not a laundry list
+- **"Spring = impact, Fall = planning"** — Spring Connects skew toward retrospective impact (tied to rewards/calibration). Fall skews toward future goals/development
+- **"Bottom half of the Impact Card"** — Focus updates on key wins section, not the goals/compliance rows
+- **"2 business days before"** — Written submission due before the Connect meeting; manager annotates and returns morning-of for discussion
 
 ### Step 5: Draft the Connect
 
