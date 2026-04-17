@@ -38,6 +38,22 @@ Features:
 - Calibrated length (400-800 words total)
 - Copy-paste ready output matching the exact Perspectives form fields
 
+### Authoring Toolbox Prompts
+**Author and upgrade .ttp / .ttt threat-hunting prompts for the Toolbox_EXE library.**
+
+Produces high-signal detection prompts with structured JSON findings, MITRE mapping, and anti-false-positive guardrails:
+- **7-block SystemPrompt anatomy** — Objective, Be vigilant for, Safe patterns, Detection Checklist, Instruction Details, Rewards, Response Schema
+- **Tiered impact levers** — Tier 1 baseline correctness through Tier 4 production discipline
+- **Severity + confidence rubrics** — stable criteria for critical/high/medium/low/informational plus 0-100 confidence gating
+- **Hardening clauses** — copy-paste no-speculation, attribution-verbatim, prompt-injection defense, coherence check
+- **3-example few-shot recipe** — positive / ambiguous-graded / negative for confidence calibration
+
+Features:
+- Ready-to-adapt `.ttp` and `.ttt` scaffolds
+- Concrete before/after upgrade example on a real library prompt
+- `validate.py` format + discipline checker for CI use
+- Format reference for `.ttp` (single prompt) and `.ttt` (tape chain)
+
 ## Installation
 
 ```bash
@@ -55,8 +71,14 @@ AI_Skills/
 ├── skills/
 │   ├── connect/
 │   │   └── SKILL.md         # Connect skill definition
-│   └── perspectives/
-│       └── SKILL.md         # Perspectives skill definition
+│   ├── perspectives/
+│   │   └── SKILL.md         # Perspectives skill definition
+│   └── authoring-toolbox-prompts/
+│       ├── SKILL.md                # Skill definition
+│       ├── template-prompt.ttp     # Tier-2 scaffold for single prompts
+│       ├── template-tape.ttt       # Scaffold for tape chains
+│       ├── example-upgrade.md      # Before/after library prompt upgrade
+│       └── validate.py             # Format + discipline validator
 └── README.md
 ```
 

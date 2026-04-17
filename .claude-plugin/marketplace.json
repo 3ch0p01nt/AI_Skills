@@ -7,6 +7,10 @@
     {
       "name": "connect",
       "description": "Draft a complete Microsoft Connect self-reflection and companion Impact Card through guided conversation. Covers all 5 Connect form sections with evidence-based, calibration-optimized output."
+    },
+    {
+      "name": "authoring-toolbox-prompts",
+      "description": "Author and upgrade .ttp / .ttt threat-hunting prompts for the Toolbox_EXE library. Enforces 7-block SystemPrompt anatomy, MITRE-mapped JSON findings, verbatim attribution, and tiered impact levers (severity + confidence rubrics, prompt-injection hardening, coherence checks). Ships templates, a before/after upgrade example, and a format validator."
     }
   ]
 }
